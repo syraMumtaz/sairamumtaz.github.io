@@ -52,9 +52,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.4rem 4rem;display:
 .btn-primary:hover,.btn-primary:focus{background:var(--ink-mid);transform:translateY(-2px);outline:2px solid var(--dusty);outline-offset:3px}
 .btn-soft{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding:.95rem 2.4rem;background:transparent;color:var(--ink);border:1px solid rgba(26,20,16,.2);transition:border-color .3s,background .3s,transform .2s;display:inline-block}
 .btn-soft:hover,.btn-soft:focus{border-color:#b06070;background:var(--dusty-pale);transform:translateY(-2px);outline:2px solid var(--dusty);outline-offset:3px}
-.hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.6rem;opacity:0;animation:fadeIn 1.5s 1.8s forwards;z-index:1;pointer-events:none}
-.hero-scroll span{font-size:.52rem;letter-spacing:.3em;text-transform:uppercase;color:#5c4a42}
-.hero-scroll::after{content:"";width:1px;height:32px;background:linear-gradient(to bottom,var(--dusty),transparent);animation:scrollPulse 2s infinite}
+
+
 section{padding:7rem 4rem}
 .container{max-width:1080px;margin:0 auto}
 .narrow{max-width:680px;margin:0 auto}
@@ -162,7 +161,7 @@ footer{background:var(--ink);padding:2.5rem 4rem;display:flex;justify-content:sp
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes bookFloat{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-12px) rotate(-.4deg)}}
-@keyframes scrollPulse{0%,100%{opacity:1}50%{opacity:.2}}
+
 a:focus,button:focus{outline:2px solid var(--dusty);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 @media(max-width:960px){nav{padding:1.2rem 2rem}.nav-links{gap:1.5rem}.book-inner,.about-inner,.zahida-inner{grid-template-columns:1fr;gap:3rem}.themes-grid,.fy-grid,.kids-grid{grid-template-columns:1fr}section,.preorder-section,.zahida-section{padding:5rem 2rem}footer{flex-direction:column;text-align:center;padding:2rem}.foot-right{align-items:center}}
@@ -204,7 +203,7 @@ a:focus,button:focus{outline:2px solid var(--dusty);outline-offset:3px}
       <a href="#reserve" class="btn-soft">Reserve Your Copy</a>
     </div>
   </div>
-  <div class="hero-scroll" aria-hidden="true"><span>Scroll</span></div>
+  
 </section>
 
 <!-- BOOK -->
