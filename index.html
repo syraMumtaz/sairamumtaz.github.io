@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
-:root{--ivory:#faf7f2;--ivory-deep:#f2ede4;--ivory-card:#ede8df;--dusty:#c4788a;--dusty-light:#d9a0ae;--dusty-pale:rgba(196,120,138,.1);--dusty-border:rgba(196,120,138,.22);--gold:#b8924a;--ink:#1a1410;--ink-mid:#3d3028;--muted:#7a6a5e;--serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
+:root{--ivory:#faf7f2;--ivory-deep:#f2ede4;--ivory-card:#ede8df;--dusty:#b56878;--dusty-light:#c98ea0;--dusty-pale:rgba(181,104,120,.1);--dusty-border:rgba(181,104,120,.25);--gold:#8a6e2f;--ink:#1a1410;--ink-mid:#3d3028;--muted:#5c4a42;--serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--ivory);color:var(--ink);font-family:var(--sans);font-weight:300;overflow-x:hidden;cursor:none}
@@ -46,9 +46,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.4rem 4rem;display:
 .btn-primary{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding:.95rem 2.4rem;background:var(--ink);color:var(--ivory);border:1px solid var(--ink);transition:background .3s,transform .2s;display:inline-block;cursor:pointer;font-family:var(--sans)}
 .btn-primary:hover,.btn-primary:focus{background:var(--ink-mid);transform:translateY(-2px);outline:2px solid var(--dusty);outline-offset:3px}
 .btn-soft{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding:.95rem 2.4rem;background:transparent;color:var(--ink);border:1px solid rgba(26,20,16,.2);transition:border-color .3s,background .3s,transform .2s;display:inline-block}
-.btn-soft:hover,.btn-soft:focus{border-color:var(--dusty);background:var(--dusty-pale);transform:translateY(-2px);outline:2px solid var(--dusty);outline-offset:3px}
+.btn-soft:hover,.btn-soft:focus{border-color:#b06070;background:var(--dusty-pale);transform:translateY(-2px);outline:2px solid var(--dusty);outline-offset:3px}
 .hero-scroll{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.6rem;opacity:0;animation:fadeIn 1.5s 1.8s forwards}
-.hero-scroll span{font-size:.52rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.hero-scroll span{font-size:.52rem;letter-spacing:.3em;text-transform:uppercase;color:#5c4a42}
 .hero-scroll::after{content:"";width:1px;height:32px;background:linear-gradient(to bottom,var(--dusty),transparent);animation:scrollPulse 2s infinite}
 section{padding:7rem 4rem}
 .container{max-width:1080px;margin:0 auto}
@@ -74,7 +74,7 @@ section{padding:7rem 4rem}
 .book-content p{font-size:1rem;color:var(--muted);line-height:1.95;margin-bottom:1.3rem}
 .book-content p strong{color:var(--ink-mid);font-weight:500}
 .book-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.75rem}
-.tag{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;padding:.3rem .85rem;border:1px solid var(--dusty-border);color:var(--dusty);background:var(--dusty-pale)}
+.tag{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;padding:.3rem .85rem;border:1px solid var(--dusty-border);color:#b06070;background:var(--dusty-pale)}
 .quote-band{background:var(--ink);padding:6rem 4rem;text-align:center;position:relative;overflow:hidden}
 .qb-ornament{position:absolute;top:-3rem;left:3rem;font-family:var(--serif);font-size:18rem;color:rgba(196,120,138,.07);line-height:1;pointer-events:none;font-style:italic}
 .q-text{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,2.8vw,2.2rem);color:var(--ivory);line-height:1.55;max-width:820px;margin:0 auto 1.5rem;position:relative;z-index:1}
@@ -98,10 +98,10 @@ section{padding:7rem 4rem}
 .zahida-label{font-size:.58rem;letter-spacing:.38em;text-transform:uppercase;color:var(--dusty-light);margin-bottom:1.5rem;display:flex;align-items:center;gap:.75rem}
 .zahida-label::before{content:"";width:24px;height:1px;background:var(--dusty);opacity:.5}
 .zahida-name{font-family:var(--serif);font-size:clamp(3.5rem,7vw,5.5rem);font-weight:300;color:var(--ivory);line-height:1;letter-spacing:.02em;margin-bottom:.5rem}
-.zahida-name em{display:block;font-style:italic;color:rgba(250,247,242,.35);font-size:.38em;letter-spacing:.12em;margin-top:.5rem;font-family:var(--sans);font-weight:300}
+.zahida-name em{display:block;font-style:italic;color:rgba(250,247,242,.55);font-size:.38em;letter-spacing:.12em;margin-top:.5rem;font-family:var(--sans);font-weight:300}
 .zahida-rule{width:40px;height:1px;background:var(--dusty);opacity:.4;margin:1.8rem 0}
-.zahida-dedication{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(250,247,242,.4);line-height:1.75}
-.zahida-content p{font-size:.97rem;color:rgba(250,247,242,.58);line-height:1.95;margin-bottom:1.3rem}
+.zahida-dedication{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(250,247,242,.82);line-height:1.75}
+.zahida-content p{font-size:.97rem;color:rgba(250,247,242,.75);line-height:1.95;margin-bottom:1.3rem}
 .zahida-content p strong{color:rgba(250,247,242,.85);font-weight:400}
 .zahida-quote{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--dusty-light);line-height:1.65;margin-top:2rem;padding-left:1.5rem;border-left:1px solid rgba(196,120,138,.4)}
 .kids-section{background:var(--ivory)}
@@ -110,10 +110,10 @@ section{padding:7rem 4rem}
 .kid-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--dusty),var(--gold))}
 .kid-age{font-size:.52rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem;display:block}
 .kid-name{font-family:var(--serif);font-size:1.6rem;color:var(--ink);margin-bottom:1rem;line-height:1.2}
-.kid-desc{font-size:.9rem;color:var(--muted);line-height:1.88}
+.kid-desc{font-size:.9rem;color:#63514a;line-height:1.88}
 .kid-proof{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--dusty);margin-top:1.2rem;line-height:1.55;border-top:1px solid var(--dusty-border);padding-top:1rem}
 .kid-activities{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
-.kid-activity{font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;padding:.25rem .7rem;border:1px solid var(--dusty-border);color:var(--dusty);background:var(--dusty-pale)}
+.kid-activity{font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;padding:.25rem .7rem;border:1px solid var(--dusty-border);color:#b06070;background:var(--dusty-pale)}
 .about-section{background:var(--ivory-deep)}
 .about-inner{display:grid;grid-template-columns:380px 1fr;gap:5.5rem;align-items:start}
 .about-photo-wrap{position:relative}
@@ -132,14 +132,14 @@ section{padding:7rem 4rem}
 .preorder-eyebrow::before,.preorder-eyebrow::after{content:"";width:24px;height:1px;background:var(--dusty);opacity:.4}
 .preorder-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ivory);line-height:1.2;margin-bottom:1rem}
 .preorder-title em{font-style:italic;color:var(--dusty-light)}
-.preorder-sub{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(250,247,242,.5);line-height:1.7;margin-bottom:2.5rem}
+.preorder-sub{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:rgba(250,247,242,.7);line-height:1.7;margin-bottom:2.5rem}
 .preorder-form{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center}
 .preorder-form input{font-family:var(--sans);font-size:.85rem;padding:.9rem 1.2rem;background:rgba(250,247,242,.07);border:1px solid rgba(196,120,138,.3);color:var(--ivory);outline:none;transition:border-color .3s;flex:1;min-width:190px}
-.preorder-form input::placeholder{color:rgba(250,247,242,.3)}
+.preorder-form input::placeholder{color:rgba(250,247,242,.72)}
 .preorder-form input:focus{border-color:var(--dusty);outline:2px solid var(--dusty);outline-offset:2px}
 .preorder-form button{font-family:var(--sans);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;padding:.9rem 2rem;background:var(--dusty);color:white;border:none;cursor:pointer;transition:background .3s,transform .2s;white-space:nowrap}
 .preorder-form button:hover,.preorder-form button:focus{background:var(--dusty-light);transform:translateY(-2px);outline:2px solid var(--dusty-light);outline-offset:3px}
-.preorder-note{font-size:.7rem;color:rgba(250,247,242,.28);margin-top:1.2rem;letter-spacing:.05em}
+.preorder-note{font-size:.7rem;color:rgba(250,247,242,.72);margin-top:1.2rem;letter-spacing:.05em}
 .preorder-success{display:none;font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--dusty-light);margin-top:2rem;line-height:1.7;padding:1.5rem;border:1px solid rgba(196,120,138,.3)}
 .contact-section{background:var(--ivory-deep);text-align:center;padding:8rem 4rem}
 .contact-section p{font-size:.98rem;color:var(--muted);max-width:520px;margin:0 auto 2.5rem;line-height:1.9}
@@ -148,12 +148,12 @@ section{padding:7rem 4rem}
 .social-row a:hover,.social-row a:focus{color:var(--dusty);outline:2px solid var(--dusty);outline-offset:3px}
 footer{background:var(--ink);padding:2.5rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .foot-left .foot-brand{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--gold)}
-.foot-left .foot-sub{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(250,247,242,.35);margin-top:.25rem}
+.foot-left .foot-sub{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(250,247,242,.55);margin-top:.25rem}
 .foot-right{display:flex;flex-direction:column;align-items:flex-end;gap:.5rem}
 .foot-social{display:flex;gap:1.5rem}
-.foot-social a{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(250,247,242,.4);text-decoration:none;transition:color .3s}
+.foot-social a{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(250,247,242,.82);text-decoration:none;transition:color .3s}
 .foot-social a:hover{color:var(--dusty-light)}
-.foot-copy{font-size:.55rem;letter-spacing:.12em;color:rgba(250,247,242,.25)}
+.foot-copy{font-size:.55rem;letter-spacing:.12em;color:rgba(250,247,242,.45)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes bookFloat{0%,100%{transform:translateY(0) rotate(-.4deg)}50%{transform:translateY(-12px) rotate(-.4deg)}}
@@ -276,14 +276,13 @@ a:focus,button:focus{outline:2px solid var(--dusty);outline-offset:3px}
       <p class="zahida-label reveal">This Book Is Dedicated To</p>
       <h2 class="zahida-name reveal d1" id="zahida-heading">Zahida<em>My Mother</em></h2>
       <div class="zahida-rule reveal d2" aria-hidden="true"></div>
-      <p class="zahida-dedication reveal d3">She could not always protect me.<br/>But she came to my school with a red apple.<br/>And I ran straight to her.<br/>I will always run straight to her.</p>
+      <p class="zahida-dedication reveal d3">She survived daily abuse at the hands of a man and his entire family<br/>who believed she had no rights, no voice, and no worth.<br/>She survived it quietly — because that was the only option she was given.<br/>She is free now.<br/>This book is her freedom made loud.</p>
     </div>
     <div class="zahida-content">
-      <p class="reveal">Zahida survived things that would have broken most people. She survived a husband who beat her almost every day. She survived his mother who choked her with her own scarf in front of her children. She survived being sent away from her babies — twice — by the men who called themselves her family. She survived a foreign country with no money, no power, and no one coming to save her.</p>
-      <p class="reveal d1">She survived all of it <strong>quietly.</strong> Because she had to. Because that was the only option she was given.</p>
-      <p class="reveal d1">What Saira's father and his entire family — his mother, his sisters, his brothers — did not understand is that a woman who survives that quietly is not defeated. She is waiting. She is gathering herself. She is making sure her daughters see something — even if she cannot yet say it out loud — that survival is possible. That you are still here. That you are still you.</p>
-      <p class="reveal d2">Zahida is free today. This book is the story of what it took to get there — for both of them. And it is the loudest possible tribute to a woman who was silenced for decades and deserves to have her name spoken with reverence.</p>
-      <p class="zahida-quote reveal d3">"This book is for every woman who was silenced. But it is especially for you, Zahida. You deserved so much more. This book is me giving it to you."</p>
+      <p class="reveal">Zahida survived decades of abuse at the hands of a man who believed she had no rights, no voice, and no worth. His mother. His sisters. His brothers. They all participated.</p>
+      <p class="reveal d1">She survived it quietly. Because that was the only option she was given.</p>
+      <p class="reveal d2">She is free now. This book is her freedom made loud.</p>
+      <p class="zahida-quote reveal d3">"The full story of Zahida — and what it cost both of them — is in the pages of UNSILENCED."</p>
     </div>
   </div>
 </div>
@@ -408,7 +407,7 @@ a:focus,button:focus{outline:2px solid var(--dusty);outline-offset:3px}
     <div class="social-row reveal d4">
       <a href="https://www.tiktok.com/@sairatalk" target="_blank" rel="noopener noreferrer" aria-label="Follow Saira on TikTok">TikTok @sairatalk</a>
       <a href="https://www.instagram.com/sairatalk" target="_blank" rel="noopener noreferrer" aria-label="Follow Saira on Instagram">Instagram @sairatalk</a>
-      <a href="https://www.linkedin.com/in/saira-mumtaz-396494207/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Saira on LinkedIn">LinkedIn</a>
+      <a href="https://linkedin.com/in/saira-mumtaz-396494207" target="_blank" rel="noopener noreferrer" aria-label="Connect with Saira on LinkedIn">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -423,7 +422,7 @@ a:focus,button:focus{outline:2px solid var(--dusty);outline-offset:3px}
     <nav class="foot-social" aria-label="Social media links">
       <a href="https://www.tiktok.com/@sairatalk" target="_blank" rel="noopener noreferrer">TikTok</a>
       <a href="https://www.instagram.com/sairatalk" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://www.linkedin.com/in/saira-mumtaz-396494207/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://linkedin.com/in/saira-mumtaz-396494207" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </nav>
     <div class="foot-copy">&copy; 2026 Saira Mumtaz &nbsp;&middot;&nbsp; fromsilencetostrength.com</div>
   </div>
@@ -440,16 +439,33 @@ document.querySelectorAll("a,button").forEach(el=>{
 });
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible");});},{threshold:.1});
 document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
-document.getElementById("reserveForm").addEventListener("submit",function(e){
+document.getElementById("reserveForm").addEventListener("submit",async function(e){
   e.preventDefault();
   const name=document.getElementById("reserveName").value.trim();
   const email=document.getElementById("reserveEmail").value.trim();
   if(!name||!email){alert("Please enter your name and email address.");return;}
-  const subject=encodeURIComponent("UNSILENCED Book Reservation — "+name);
-  const body=encodeURIComponent("New book reservation:\n\nName: "+name+"\nEmail: "+email+"\n\nAdd to your reader list!");
-  window.open("mailto:saira@fromsilencetostrength.com?subject="+subject+"&body="+body);
-  document.getElementById("reserveForm").style.display="none";
-  document.getElementById("reserveSuccess").style.display="block";
+  const btn=this.querySelector("button");
+  btn.textContent="Sending...";
+  btn.disabled=true;
+  try{
+    const res=await fetch("https://formspree.io/f/xaqvkzby",{
+      method:"POST",
+      headers:{"Content-Type":"application/json","Accept":"application/json"},
+      body:JSON.stringify({name:name,email:email,_subject:"UNSILENCED Book Reservation — "+name})
+    });
+    if(res.ok){
+      document.getElementById("reserveForm").style.display="none";
+      document.getElementById("reserveSuccess").style.display="block";
+    } else {
+      btn.textContent="Reserve My Copy";
+      btn.disabled=false;
+      alert("Something went wrong. Please try again or email saira@fromsilencetostrength.com directly.");
+    }
+  } catch(err){
+    btn.textContent="Reserve My Copy";
+    btn.disabled=false;
+    alert("Something went wrong. Please try again or email saira@fromsilencetostrength.com directly.");
+  }
 });
 </script>
 </body>
