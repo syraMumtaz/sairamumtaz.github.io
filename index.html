@@ -36,6 +36,11 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
+<style>
+/* Connect: the email sits on top as a plain text link, no bubble */
+.mail-link { display: inline-block; margin-bottom: 22px; font-family: var(--display); font-style: italic; font-size: clamp(24px, 3vw, 32px); color: var(--rose); text-decoration: underline; text-decoration-color: rgba(154, 78, 94, .35); text-underline-offset: 6px; overflow-wrap: anywhere; }
+.mail-link:hover { text-decoration-color: currentColor; }
+</style>
 </head>
 <body>
 
@@ -220,13 +225,12 @@
   <section class="connect" id="contact" aria-labelledby="c-h">
     <div class="container">
       <div class="head"><h2 id="c-h">For those who want to <em>stay close</em></h2><p>For literary agent inquiries, press, speaking engagements, or to share how this story touched you. Every message matters.</p></div>
+      <a class="mail-link" href="mailto:saira@sairamumtaz.com">saira@sairamumtaz.com</a>
       <div class="socials">
-        <a class="pill" href="mailto:saira@sairamumtaz.com">Get in Touch</a>
         <a class="pill ghost" href="https://www.tiktok.com/@sairatalk" aria-label="TikTok @sairatalk, opens in a new tab">TikTok @sairatalk</a>
         <a class="pill ghost" href="https://www.instagram.com/sairatalk" aria-label="Instagram @sairatalk, opens in a new tab">Instagram @sairatalk</a>
         <a class="pill ghost" href="https://linkedin.com/in/saira-mumtaz" aria-label="LinkedIn, opens in a new tab">LinkedIn</a>
       </div>
-      <p class="mail">saira@sairamumtaz.com</p>
     </div>
   </section>
 </main>
