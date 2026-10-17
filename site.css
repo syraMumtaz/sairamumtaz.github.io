@@ -86,7 +86,7 @@ p { margin: 0; text-wrap: pretty; }
 .door-light .sun { position: absolute; left: 50%; top: calc(53% - var(--sun, 0) * 16%); width: 40%; aspect-ratio: 1; border-radius: 50%; transform: translate(-50%, -50%);
   background: radial-gradient(circle, #FFF6E4 0 38%, #FCDDB0 60%, rgba(252, 221, 176, 0) 71%); }
 .door-light .sea { position: absolute; left: 0; right: 0; top: 53%; bottom: 0;
-  background: linear-gradient(180deg, rgba(255, 236, 214, .35), transparent 30%), repeating-linear-gradient(180deg, rgba(255, 240, 222, .16) 0 1px, transparent 1px 6px); }
+  background: linear-gradient(180deg, rgba(255, 236, 214, .35), transparent 30%); }
 .halo { position: absolute; left: 50%; top: 46%; width: 340px; height: 340px; margin: -170px 0 0 -170px; border-radius: 50%;
   background: radial-gradient(closest-side, rgba(255, 236, 205, .9), rgba(255, 236, 205, 0)); opacity: var(--halo, .9); transform: scale(var(--hs, 1)); pointer-events: none; }
 .wall-text { position: absolute; left: 16px; right: 16px; text-align: center; color: var(--text); opacity: var(--wt, 1); }
@@ -290,3 +290,10 @@ img.portrait { display: block; height: auto; object-position: 50% 22%; }
   .kh-stage { background: linear-gradient(180deg, #FBE7D8 0%, #F1BCA6 50%, #A3826F 100%); }
 }
 @media (max-width: 700px) { .room { padding-inline: 30px; } }
+
+/* Hero hierarchy: the book title leads, her name signs it */
+.room { gap: 14px; }
+.room h1 { font-size: clamp(56px, 11vw, 140px); line-height: .92; font-weight: 600; letter-spacing: -.015em; }
+.room .door-line { font-size: clamp(22px, 3vw, 34px); text-wrap: balance; max-width: 22ch; line-height: 1.25; }
+.room .byline { display: flex; align-items: center; gap: 14px; margin-top: 6px; font: 600 13px/1 var(--body); letter-spacing: .32em; text-transform: uppercase; color: var(--ink); }
+.room .byline::before, .room .byline::after { content: ""; width: 36px; height: 1px; background: var(--gold); }
