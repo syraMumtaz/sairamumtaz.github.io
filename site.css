@@ -299,4 +299,4 @@ img.portrait { display: block; height: auto; object-position: 50% 22%; }
 .room .byline::before, .room .byline::after { content: ""; width: 36px; height: 1px; background: var(--gold); }
 
 /* Top bar: no reserve prompts, just the name and the pages */
-.nav > .container > .pill, .nav li.wide-only { display: none !important; }
+.nav > .container > .pill { display: none !important; }
